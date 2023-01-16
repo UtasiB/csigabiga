@@ -1,0 +1,100 @@
+body{
+overflow-x: hidden;
+
+background-image: url(hatter.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+font-size: 14pt;
+color: white;
+}
+#csigaanimacio{
+    width: 190%;
+    transition: all .2s ease-in-out; 
+    overflow-x:hidden;
+}
+#csigaanimacio:hover{
+    transform: scale(1.5);
+}
+footer{
+    position: relative;
+    animation-name: repul;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    width: 100px;
+}
+video{
+    width: 50%;
+    border-image: linear-gradient(45deg, rgb(134,240,76),  rgb(134,78,0)) 1;
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 5px;
+}
+article p{
+    width: 50%;
+}
+#oshonos{
+    list-style-type: square;
+}
+#betelepitett{
+    list-style-type: disc;
+}
+.focim, h2{
+    text-shadow: 3px 1px #00ff045a;
+}
+header{
+    position: relative;
+    display: inline-block;
+    width: 40%;
+}
+.csigakint{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+.csigabent:hover{
+    background-image: url('csigakint.png');
+    background-size:  100%;
+    background-repeat: no-repeat;
+}
+.csigakint{
+    width: 40%;
+}
+.csigabent{
+    width: 40%;
+}
+@media screen and (max-width: 600px) {
+    .csigakint{
+        width: 100%;
+    }
+    .csigabent{
+        width: 100%;
+    }
+    #csigaanimacio{
+        width: 100%;
+    }
+    body{
+        text-align: center;
+    }
+    p{
+        padding-left: 26%;
+    }
+    li{
+        padding-right: 10%;
+    }
+    #oshonos{
+        list-style-type: none;
+    }
+    #betelepitett{
+        list-style-type:  none;
+    }
+    #csigaanimacio:hover{
+        transform: rotate(180deg) scale(1.4);
+    }
+}
+
+@keyframes repul{
+    0%{rotate: 0deg;left: 0;right: 0;}
+    50%{rotate: 360deg;left: 84.5%;right: 0;}
+    100%{rotate: 0deg;left: 0%;right: 90%;}
+}
