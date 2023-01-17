@@ -65,9 +65,13 @@ header{
 }
 @media screen and (max-width: 600px) {
     .csigakint{
+        display: flex;
+        align-items: center;
         width: 100%;
     }
     .csigabent{
+        display: flex;
+        align-items: center;
         width: 100%;
     }
     #csigaanimacio{
